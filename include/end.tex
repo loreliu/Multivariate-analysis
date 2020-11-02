@@ -1,0 +1,57 @@
+% !TeX root = multianalysis.tex
+% !TeX encoding = UTF-8
+% !TeX program = XeLaTeX
+
+
+\begin{frame}[fragile]
+    \frametitle{参考文献}
+    % \begin{multicols}{1}
+    \tiny
+    \begin{thebibliography}{99}
+        \bibitem{}
+        \textsc{何晓群}.
+        \newblock 多元统计分析 [M]. 2019.
+        \newblock 北京: 中国人民大学出版社
+
+        \bibitem{}
+        \textsc{白志东}.
+        \newblock 大维统计分析 [M]. 2012.
+        \newblock 北京：高等教育出版社
+
+        % \bibitem{}
+        % \textsc{陈希孺}.
+        % \newblock 数理统计学教程 [M]. 2009.
+        % \newblock 合肥：中国科学技术大学出版社
+
+        % \bibitem{}
+        % \textsc{陈希孺}.
+        % \newblock 数理统计学简史 [M]. 2002.
+        % \newblock 长沙：湖南教育出版社
+
+        \bibitem{}
+        \textsc{Vincent Spruyt}.
+        \newblock A geometric interpretation of the covariance matrix [EB/OL]. 2014.
+        \newblock Computer vision for dummies
+        \newblock \url{https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix}
+        
+        \end{thebibliography}
+    % \end{multicols}
+\end{frame}
+
+
+\begin{frame}
+    \begin{tikzpicture}[overlay]
+    \pgfmathdeclarerandomlist{symbols}{%
+      {\texttt{\string Cluster}}%
+      {\texttt{\string LDA}}
+      {\texttt{\string PCA}}
+      {\texttt{\string Factor}}}
+    \foreach \y in {0,-1,...,-7} {
+      \foreach \x in {0,1,...,12} {
+        \pgfmathrandomitem{\randsymbol}{symbols}
+        \node[black!15,rotate=45] at (\x,\y) {\randsymbol};
+      }
+    }
+    \end{tikzpicture}
+    \titlepage
+\end{frame}
